@@ -1,0 +1,17 @@
+[package]
+name = "polyglot-rs"
+version = "0.1.0"
+authors = ["Martin Junghanns <github@s1ck.dev>"]
+edition = "2021"
+
+[lib]
+crate_type = ["cdylib", "rlib"]
+
+[dependencies]
+libc = { version = "0.2" , default-features = false }
+polyglot-sys = { path = "polyglot-sys", version = "0.1.0" }
+
+# [profile.release]
+# opt-level = 1
+# debug = true
+# lto = true

@@ -1,0 +1,10 @@
+[package]
+name = "polyglot-sys"
+version = "0.1.0+22.2"
+authors = ["Martin Junghanns <github@s1ck.dev>"]
+license = "MIT OR Apache-2.0"
+description = "Native bindings to the polyglot library"
+edition = "2021"
+
+[dependencies]
+libc = { version = "0.2" , default-features = false }

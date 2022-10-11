@@ -1,0 +1,15 @@
+[package]
+name = "demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polyglot-rs = { path = "..", version = "0.1.0" }
+
+[profile.release]
+opt-level = 1
+debug = true
+lto = true
+
+[profile.release.package.polyglot-rs]
+debug = true
